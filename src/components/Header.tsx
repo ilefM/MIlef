@@ -1,5 +1,5 @@
 function Header() {
-  return <div>Ilef</div>;
+  return <div className="m-2 border text-right">Ilef</div>;
 }
 
 export default Header;
