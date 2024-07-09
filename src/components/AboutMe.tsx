@@ -18,9 +18,9 @@ function AboutMe() {
           <div className="text-lg">Mohammed Ilef</div>
           <div className="text-6xl">Ikhelef</div>
           <div className="flex space-x-4 mx-auto justify-center sm:justify-start mt-6 sm:mt-4">
-            <FaInstagram size={25} />
-            <FaGithub size={24} />
-            <CiLinkedin size={25} />
+            <FaInstagram size={27} />
+            <FaGithub size={27} />
+            <CiLinkedin size={27} />
           </div>
           <p className="mt-8 text-justify">
             Sed aliquet nibh eget nisi vehicula, quis blandit erat rhoncus. Duis
