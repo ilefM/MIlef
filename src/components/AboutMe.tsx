@@ -32,10 +32,6 @@ function AboutMe() {
           </p>
         </div>
       </div>
-
-      {/* <div className="border-2 max-w-[400px] text-center sm:text-left">
-        
-      </div> */}
     </>
   );
 }
