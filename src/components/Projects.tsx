@@ -1,42 +1,62 @@
-import project from '../assets/projectImage.png';
+import fikra from '../assets/fikra.png';
+import algoVisualiser from '../assets/algoVisualiser.png';
+import passwordGenerator from '../assets/passwordGenerator.png';
+import { FaGithub } from 'react-icons/fa';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 function Projects() {
   const projects = [
     {
-      url: project,
-      title: 'A Project Title',
-      description:
-        'Sed aliquet nibh eget nisi vehicula, quis blandit erat rhoncus. Duis neque augue, varius non lobortis sed, suscipit ac erat. Nunc placerat risus eget orci accumsan, suscipit ultrices mauris molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In lacus purus, mattis id nunc eu, sagittis volutpat eros. Phasellus suscipit est eu enim scelerisque cursus.',
+      id: 1,
+      url: fikra,
+      title: 'Fikra',
+      live: 'https://fikra.vercel.app',
+      github: 'https://github.com/ilefM/fikra',
     },
     {
-      url: project,
-      title: 'A Project Title',
-      description:
-        'Sed aliquet nibh eget nisi vehicula, quis blandit erat rhoncus. Duis neque augue, varius non lobortis sed, suscipit ac erat. Nunc placerat risus eget orci accumsan, suscipit ultrices mauris molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In lacus purus, mattis id nunc eu, sagittis volutpat eros. Phasellus suscipit est eu enim scelerisque cursus.',
+      id: 2,
+      url: algoVisualiser,
+      title: 'Sorting Algorithm Visualiser',
+      live: 'https://ilefm.github.io/sorting-visualiser',
+      github: 'https://github.com/ilefM/sorting-visualiser',
     },
     {
-      url: project,
-      title: 'A Project Title',
-      description:
-        'Sed aliquet nibh eget nisi vehicula, quis blandit erat rhoncus. Duis neque augue, varius non lobortis sed, suscipit ac erat. Nunc placerat risus eget orci accumsan, suscipit ultrices mauris molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In lacus purus, mattis id nunc eu, sagittis volutpat eros. Phasellus suscipit est eu enim scelerisque cursus.',
-    },
-    {
-      url: project,
-      title: 'A Project Title',
-      description:
-        'Sed aliquet nibh eget nisi vehicula, quis blandit erat rhoncus. Duis neque augue, varius non lobortis sed, suscipit ac erat. Nunc placerat risus eget orci accumsan, suscipit ultrices mauris molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In lacus purus, mattis id nunc eu, sagittis volutpat eros. Phasellus suscipit est eu enim scelerisque cursus.',
+      id: 3,
+      url: passwordGenerator,
+      title: 'Password Generator',
+      live: 'https://ilefm.github.io/password-generator',
+      github: 'https://github.com/ilefM/password-generator',
     },
   ];
   return (
-    <div className="border-2 mx-2 mt-20 sm:mx-auto sm:max-w-[1100px]">
-      <p className="text-2xl">Pet projects</p>
-      <div className="flex flex-col">
+    <div className="my-40">
+      <div className="flex">
+        <div className="bg-gray-400 mt-4 w-1/3 h-[1px]"></div>
+        <p className="text-2xl font-raleway w-1/3 text-neutral-700 text-center">
+          Pet projects
+        </p>
+        <div className="bg-gray-400 mt-4 w-1/3 h-[1px]"></div>
+      </div>
+
+      <div className="mt-6 flex flex-wrap justify-around">
         {projects.map((p) => (
-          <div className="my-3 flex justify-around">
-            <img className="w-[250px]" src={p.url} alt="project" />
-            <div className="flex flex-col max-w-[400px]">
-              <p className="text-l font-semibold mb-2">{p.title}</p>
-              <p>{p.description}</p>
+          <div
+            key={p.id}
+            className="w-[270px] mt-5 mx-2 rounded-sm ring-gray-200 shadow-lg"
+          >
+            <div className="bg-gray-100 w-full h-[165px] flex justify-center items-center">
+              <img className="w-[80%]" src={p.url} />
+            </div>
+            <div className="m-2">
+              <p className="font-raleway text-nowrap">{p.title}</p>
+              <div className="flex space-x-4 mt-2">
+                <a href={p.github} target="_blank" rel="noopener noreferrer">
+                  <FaGithub size={15} />
+                </a>
+                <a href={p.live} target="_blank" rel="noopener noreferrer">
+                  <FaExternalLinkAlt size={15} />
+                </a>
+              </div>
             </div>
           </div>
         ))}

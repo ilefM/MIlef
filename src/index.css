@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('./assets/fonts/Raleway-Light.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('./assets/fonts/Raleway-SemiBold.ttf') format('truetype');
+  font-style: normal;
+}

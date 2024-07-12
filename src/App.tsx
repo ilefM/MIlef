@@ -1,12 +1,10 @@
 import AboutMe from './components/AboutMe';
-import Career from './components/Career';
 import Projects from './components/Projects';
 
 function App() {
   return (
-    <div className="mx-5">
+    <div className="flex flex-col mx-10 lg:mx-auto max-w-[900px] mt-36 font-raleway">
       <AboutMe />
-      <Career />
       <Projects />
     </div>
   );

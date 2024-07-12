@@ -27,8 +27,8 @@ function Career() {
   ];
 
   return (
-    <div className="mt-32 mx-2 sm:mx-auto sm:max-w-[1100px]">
-      <p className="text-2xl">Career</p>
+    <div className="sm:mx-auto mt-20">
+      <p className="text-2xl">Experience</p>
       <ol className="mt-6 items-center sm:flex">
         {expriences.map((e) => (
           <li className="relative mb-6 sm:mb-0">
