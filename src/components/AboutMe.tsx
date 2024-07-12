@@ -33,7 +33,7 @@ function AboutMe() {
             <FaInstagram size={24} />
           </a>
         </div>
-        <p className="mt-8 mr-8 text-left md:max-w-[450px]">
+        <p className="mt-8 md:mr-8 text-center w-3/4 mx-auto md:w-auto md:text-left md:max-w-[450px]">
           Sed aliquet nibh eget nisi vehicula, quis blandit erat rhoncus. Duis
           neque augue, varius non lobortis sed, suscipit ac erat. Nunc placerat
           risus eget orci accumsan, suscipit ultrices mauris molestie. Class

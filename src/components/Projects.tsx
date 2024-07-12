@@ -3,8 +3,11 @@ import algoVisualiser from '../assets/algoVisualiser.png';
 import passwordGenerator from '../assets/passwordGenerator.png';
 import { FaGithub } from 'react-icons/fa';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+  const { t } = useTranslation();
+
   const projects = [
     {
       id: 1,
@@ -28,14 +31,15 @@ function Projects() {
       github: 'https://github.com/ilefM/password-generator',
     },
   ];
+
   return (
     <div className="my-40">
       <div className="flex">
-        <div className="bg-gray-400 mt-4 w-1/3 h-[1px]"></div>
-        <p className="text-2xl font-raleway w-1/3 text-neutral-700 text-center">
-          Pet projects
+        <div className="bg-gray-400 mt-4 w-full sm:w-1/3 h-[1px]"></div>
+        <p className="text-xl md:text-2xl font-raleway w-full sm:w-1/3 text-neutral-700 text-nowrap text-center">
+          {t('petProjects.title')}
         </p>
-        <div className="bg-gray-400 mt-4 w-1/3 h-[1px]"></div>
+        <div className="bg-gray-400 mt-4 w-full sm:w-1/3 h-[1px]"></div>
       </div>
 
       <div className="mt-6 flex flex-wrap justify-around">
@@ -44,7 +48,7 @@ function Projects() {
             key={p.id}
             className="w-[270px] mt-5 mx-2 rounded-sm ring-gray-200 shadow-lg"
           >
-            <div className="bg-gray-100 w-full h-[165px] flex justify-center items-center">
+            <div className="bg-gray-100 rounded-sm w-full h-[165px] flex justify-center items-center">
               <img className="w-[80%]" src={p.url} />
             </div>
             <div className="m-2">
