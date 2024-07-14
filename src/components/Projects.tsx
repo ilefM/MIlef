@@ -1,5 +1,5 @@
 import fikra from '../assets/fikra.png';
-import algoVisualiser from '../assets/algoVisualiser.png';
+import sortingVisualiser from '../assets/sortingVisualiser.png';
 import passwordGenerator from '../assets/passwordGenerator.png';
 import { FaGithub } from 'react-icons/fa';
 import { FaExternalLinkAlt } from 'react-icons/fa';
@@ -18,7 +18,7 @@ function Projects() {
     },
     {
       id: 2,
-      url: algoVisualiser,
+      url: sortingVisualiser,
       title: 'Sorting Algorithm Visualiser',
       live: 'https://ilefm.github.io/sorting-visualiser',
       github: 'https://github.com/ilefM/sorting-visualiser',
@@ -33,32 +33,41 @@ function Projects() {
   ];
 
   return (
-    <div className="my-40">
-      <div className="flex">
-        <div className="bg-gray-400 mt-4 w-full sm:w-1/3 h-[1px]"></div>
-        <p className="text-xl md:text-2xl font-raleway w-full sm:w-1/3 text-neutral-700 text-nowrap text-center">
+    <div className="mt-20">
+      <div className="flex opacity-45 mb-4">
+        <div className="bg-gray-400 dark:text-[#fefae0] mt-4 w-full h-[1px]"></div>
+        <p className="mx-4 text-xl font-ralewaySemiBold text-gray-400 dark:text-[#fefae0] text-nowrap text-center">
           {t('petProjects.title')}
         </p>
-        <div className="bg-gray-400 mt-4 w-full sm:w-1/3 h-[1px]"></div>
+        <div className="bg-gray-400 dark:text-[#fefae0] mt-4 w-full h-[1px]"></div>
       </div>
-
-      <div className="mt-6 flex flex-wrap justify-around">
+      <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between -mx-2">
         {projects.map((p) => (
           <div
+            className="flex flex-col p-2 m-2 w-80 max-w-full h-60 bg-white rounded-sm shadow-lg"
             key={p.id}
-            className="w-[270px] mt-5 mx-2 rounded-sm ring-gray-200 shadow-lg"
           >
-            <div className="bg-gray-100 rounded-sm w-full h-[165px] flex justify-center items-center">
-              <img className="w-[80%]" src={p.url} />
+            <div className="flex p-2 items-center justify-center bg-gray-200 w-full h-2/3 rounded-sm overflow-hidden">
+              <img src={p.url} className="w-4/5" />
             </div>
-            <div className="m-2">
-              <p className="font-raleway text-nowrap">{p.title}</p>
-              <div className="flex space-x-4 mt-2">
-                <a href={p.github} target="_blank" rel="noopener noreferrer">
-                  <FaGithub size={15} />
+            <div className="mt-2">
+              <h2 className="text-lg mb-2">{p.title}</h2>
+              <div className="flex space-x-4">
+                <a
+                  href={p.github}
+                  className="text-neutral-500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub />
                 </a>
-                <a href={p.live} target="_blank" rel="noopener noreferrer">
-                  <FaExternalLinkAlt size={15} />
+                <a
+                  href={p.live}
+                  className="text-neutral-500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaExternalLinkAlt />
                 </a>
               </div>
             </div>

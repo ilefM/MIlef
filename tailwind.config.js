@@ -3,13 +3,16 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      screens: {},
+      screens: {
+        sm: '660px',
+      },
       fontFamily: {
-        raleway: ['Raleway'],
-        ralewayLight: ['Raleway-Light'],
-        ralewaySemiBold: ['Raleway-SemiBold'],
+        dosis: ['Dosis'],
+        dosisSemiBold: ['Dosis SemiBold'],
+        dosisLight: ['Dosis Light'],
       },
     },
   },
+  darkMode: 'class',
   plugins: [],
 };

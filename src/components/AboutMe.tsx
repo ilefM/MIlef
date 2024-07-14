@@ -8,7 +8,7 @@ function AboutMe() {
     <div className="flex flex-col w-full md:flex-row md:justify-between">
       <div className="order-2 md:order-1 text-center md:text-left mt-8 mx-auto md:mx-0 md:mt-0">
         <div className="text-xl md:text-2xl">Mohammed Ilef</div>
-        <div className="text-6xl md:text-8xl font-ralewayLight">Ikhelef</div>
+        <div className="text-6xl md:text-8xl font-dosisLight">Ikhelef</div>
         <div className="flex space-x-4 mx-auto justify-center md:justify-start mt-6 md:mt-4">
           <a
             href="https://github.com/ilefM"
@@ -33,7 +33,7 @@ function AboutMe() {
             <FaInstagram size={24} />
           </a>
         </div>
-        <p className="mt-8 md:mr-8 text-center w-3/4 mx-auto md:w-auto md:text-left md:max-w-[450px]">
+        <p className="mt-8 md:mr-8 w-full mx-auto md:w-auto text-left md:max-w-[450px]">
           Sed aliquet nibh eget nisi vehicula, quis blandit erat rhoncus. Duis
           neque augue, varius non lobortis sed, suscipit ac erat. Nunc placerat
           risus eget orci accumsan, suscipit ultrices mauris molestie. Class

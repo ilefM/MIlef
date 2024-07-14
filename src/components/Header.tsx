@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 
@@ -9,7 +9,21 @@ function Header() {
     i18n.language === 'fr' ? 'En' : 'Fr'
   );
 
+  useEffect(() => {
+    if (localStorage.getItem('theme') === 'dark') {
+      setDarkMode(true);
+      document.documentElement.classList.add('dark');
+    }
+  }, [setDarkMode]);
+
   function toggleDarkMode() {
+    if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', 'dark');
+      document.documentElement.classList.add('dark');
+    } else {
+      localStorage.removeItem('theme');
+      document.documentElement.classList.remove('dark');
+    }
     setDarkMode(!darkMode);
   }
 
@@ -24,9 +38,9 @@ function Header() {
   }
 
   return (
-    <div className="flex mt-4 mx-8 justify-end space-x-4 md:space-x-6">
+    <div className="flex pt-4 mx-8 justify-end space-x-4 md:space-x-6">
       <button
-        className="hover:underline hover:transition-all hover:ease-linear hover:duration-500 font-ralewaySemiBold text-xl"
+        className="transition duration-300 ease-in-out font-dosisSemiBold text-xl"
         onClick={changeLanguage}
       >
         {language}

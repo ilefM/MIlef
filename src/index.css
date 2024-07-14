@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
+  font-family: 'Dosis';
+  src: url('./assets/fonts/Dosis-Regular.ttf') format('truetype');
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway-Light';
-  src: url('./assets/fonts/Raleway-Light.ttf') format('truetype');
+  font-family: 'Dosis Light';
+  src: url('./assets/fonts/Dosis-Light.ttf') format('truetype');
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway-SemiBold';
-  src: url('./assets/fonts/Raleway-SemiBold.ttf') format('truetype');
+  font-family: 'Dosis SemiBold';
+  src: url('./assets/fonts/Dosis-SemiBold.ttf') format('truetype');
   font-style: normal;
 }
