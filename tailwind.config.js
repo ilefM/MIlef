@@ -8,6 +8,7 @@ export default {
       },
       fontFamily: {
         dosis: ['Dosis'],
+        dosisBold: ['Dosis Bold'],
         dosisSemiBold: ['Dosis SemiBold'],
         dosisLight: ['Dosis Light'],
       },

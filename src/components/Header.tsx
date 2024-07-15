@@ -13,6 +13,8 @@ function Header() {
     if (localStorage.getItem('theme') === 'dark') {
       setDarkMode(true);
       document.documentElement.classList.add('dark');
+    } else {
+      setDarkMode(false);
     }
   }, [setDarkMode]);
 

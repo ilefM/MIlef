@@ -19,3 +19,9 @@
   src: url('./assets/fonts/Dosis-SemiBold.ttf') format('truetype');
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Dosis Bold';
+  src: url('./assets/fonts/Dosis-Bold.ttf') format('truetype');
+  font-style: normal;
+}

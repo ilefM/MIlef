@@ -5,7 +5,7 @@ import { FaInstagram } from 'react-icons/fa';
 
 function AboutMe() {
   return (
-    <div className="flex flex-col w-full md:flex-row md:justify-between">
+    <div className="border border-black flex flex-col w-full md:flex-row md:justify-between">
       <div className="order-2 md:order-1 text-center md:text-left mt-8 mx-auto md:mx-0 md:mt-0">
         <div className="text-xl md:text-2xl">Mohammed Ilef</div>
         <div className="text-6xl md:text-8xl font-dosisLight">Ikhelef</div>
@@ -44,7 +44,7 @@ function AboutMe() {
       </div>
       <div className="order-1 md:order-2 m-auto md:mx-0">
         <img
-          className="w-[200px] md:w-[350px] lg:w-[400px] rounded-full"
+          className="w-[200px] md:w-[350px] lg:w-[400px] rounded-full transition-all duration-300 ease-in-out"
           src={profilepic}
           alt="profile picture"
         />
