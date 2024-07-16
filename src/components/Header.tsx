@@ -45,7 +45,7 @@ function Header() {
   function MobileMenu() {
     return (
       <Menu>
-        <MenuButton className="p-2 border-2 border-[#3e525a] text-[#25343b] dark:text-[#eae0d5] dark:border-[#eae0d5] rounded-lg">
+        <MenuButton className="p-2 border-2 border-darkTurquoise text-darkTurquoise dark:text-customGray dark:border-customGray rounded-lg">
           <LuMenu size={16} />
         </MenuButton>
         <MenuItems
@@ -82,7 +82,7 @@ function Header() {
   }
 
   return (
-    <div className="max-w-[900px] w-full backdrop-blur-xl bg-cream/30 dark:bg-darkGreen/30 fixed top-0 left-1/2 -translate-x-1/2 py-2">
+    <div className="max-w-[900px] w-full backdrop-blur-xl bg-customGray/30 dark:bg-darkTurquoise/30 fixed top-0 left-1/2 -translate-x-1/2 py-2 transition ease-in-out duration-300">
       <div className="mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center w-full">
@@ -91,13 +91,13 @@ function Header() {
               src={profilepic}
               alt="profile picture"
             />
-            <p className="font-dosisBold text-lg text-darkGreen dark:text-cream">
+            <p className="font-dosisBold text-lg text-darkTurquoise dark:text-customGray">
               Mohammed Ilef
             </p>
           </div>
 
           <div className="w-full flex space-x-2 items-center justify-end">
-            <div className="hidden sm:flex items-center space-x-2 font-dosisSemiBold text-darkGreen dark:text-cream text-lg">
+            <div className="hidden sm:flex items-center space-x-2 font-dosisSemiBold text-darkTurquoise dark:text-customGray text-lg">
               <a
                 className="p-2 rounded-lg  hover:scale-90 transition ease-out"
                 href=""
@@ -119,14 +119,14 @@ function Header() {
             </div>
             {!darkMode ? (
               <button
-                className="p-2 rounded-lg bg-darkGreen border-2 border-darkGreen"
+                className="p-2 rounded-lg bg-darkTurquoise border-2 border-darkTurquoise"
                 onClick={toggleDarkMode}
               >
                 <MdDarkMode size={16} color="#eae0d5" />
               </button>
             ) : (
               <button
-                className="p-2 bg-cream rounded-lg border-2 border-cream"
+                className="p-2 bg-customGray rounded-lg border-2 border-customGray"
                 onClick={toggleDarkMode}
               >
                 <MdLightMode size={16} color="#25343b" />

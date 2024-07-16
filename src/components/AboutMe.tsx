@@ -6,24 +6,31 @@ import { FaInstagram } from 'react-icons/fa';
 function AboutMe() {
   return (
     <div className="flex flex-col w-full md:flex-row md:justify-between">
-      <div className="m-auto md:mx-0">
-        <img
-          className="w-[150px] shadow-md border border-gray-400 rounded-full transition-all duration-300 ease-in-out"
-          src={profilepic}
-          alt="profile picture"
-        />
-      </div>
-      <div className="text-center md:text-left mt-8 mx-auto md:mx-0 md:mt-0">
-        <p className="text-xl md:text-2xl">Mohammed Ilef</p>
-        <h1 className="text-6xl md:text-8xl font-dosisLight">Ikhelef</h1>
-        <div className="p-2 mt-4 rounded-xl bg-[#f7eee6] dark:bg-[#2f4049]">
-          <p className="text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel
-            neque eget velit laoreet posuere quis sit amet augue. Phasellus eu
-            volutpat eros. Quisque odio nibh, rhoncus nec dignissim sagittis,
-            faucibus non ex. Nullam laoreet tristique ex.
-          </p>
+      <div className="text-center md:text-left mt-4 mx-auto md:mx-0 md:mt-0 text-darkTurquoise dark:text-customGray">
+        <div className="m-auto md:mx-0">
+          <img
+            className="w-[150px] shadow-md border border-gray-400 rounded-full transition-all duration-300 ease-in-out"
+            src={profilepic}
+            alt="profile picture"
+          />
         </div>
+        <p className="text-xl mt-4 md:text-2xl">Mohammed Ilef</p>
+        <h1 className="text-6xl md:text-8xl font-dosisLight">Ikhelef</h1>
+      </div>
+      <div className="py-3 px-4 mt-20 rounded-xl backdrop-blur-xl bg-[#e5edf5] dark:bg-[#23323a] text-darkTurquoise dark:text-customGray">
+        <p className="text-left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel
+          neque eget velit laoreet posuere quis sit amet augue. Phasellus eu
+          volutpat eros. Quisque odio nibh, rhoncus nec dignissim sagittis,
+          faucibus non ex. Nullam laoreet tristique ex.Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Fusce vel neque eget velit laoreet
+          posuere quis sit amet augue. Phasellus eu volutpat eros. Quisque odio
+          nibh, rhoncus nec dignissim sagittis, faucibus non ex. Nullam laoreet
+          tristique ex.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Fusce vel neque eget velit laoreet posuere quis sit amet augue.
+          Phasellus eu volutpat eros. Quisque odio nibh, rhoncus nec dignissim
+          sagittis, faucibus non ex. Nullam laoreet tristique ex.
+        </p>
       </div>
     </div>
   );

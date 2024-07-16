@@ -13,8 +13,8 @@ export default {
         dosisLight: ['Dosis Light'],
       },
       colors: {
-        darkGreen: '#141d22',
-        cream: '#eae0d5',
+        darkTurquoise: '#141d22',
+        customGray: '#d0d9e2',
       },
     },
   },
