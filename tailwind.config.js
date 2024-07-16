@@ -12,6 +12,10 @@ export default {
         dosisSemiBold: ['Dosis SemiBold'],
         dosisLight: ['Dosis Light'],
       },
+      colors: {
+        darkGreen: '#141d22',
+        cream: '#eae0d5',
+      },
     },
   },
   darkMode: 'class',
