@@ -17,21 +17,6 @@ function AboutMe() {
         <p className="text-xl mt-4 md:text-2xl">Mohammed Ilef</p>
         <h1 className="text-6xl md:text-8xl font-dosisLight">Ikhelef</h1>
       </div>
-      <div className="py-3 px-4 mt-20 rounded-xl backdrop-blur-xl bg-[#e5edf5] dark:bg-[#23323a] text-darkTurquoise dark:text-customGray">
-        <p className="text-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel
-          neque eget velit laoreet posuere quis sit amet augue. Phasellus eu
-          volutpat eros. Quisque odio nibh, rhoncus nec dignissim sagittis,
-          faucibus non ex. Nullam laoreet tristique ex.Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Fusce vel neque eget velit laoreet
-          posuere quis sit amet augue. Phasellus eu volutpat eros. Quisque odio
-          nibh, rhoncus nec dignissim sagittis, faucibus non ex. Nullam laoreet
-          tristique ex.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Fusce vel neque eget velit laoreet posuere quis sit amet augue.
-          Phasellus eu volutpat eros. Quisque odio nibh, rhoncus nec dignissim
-          sagittis, faucibus non ex. Nullam laoreet tristique ex.
-        </p>
-      </div>
     </div>
   );
 }

@@ -3,9 +3,7 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      screens: {
-        sm: '660px',
-      },
+      screens: {},
       fontFamily: {
         dosis: ['Dosis'],
         dosisBold: ['Dosis Bold'],
@@ -13,8 +11,8 @@ export default {
         dosisLight: ['Dosis Light'],
       },
       colors: {
-        darkTurquoise: '#141d22',
-        customGray: '#d0d9e2',
+        darkGray: '#191d20',
+        lightGray: '#f5f3f4',
       },
     },
   },
