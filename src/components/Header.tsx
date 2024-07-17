@@ -66,7 +66,7 @@ function Header() {
 
   function MobileView() {
     return (
-      <div className="fixed top-0 right-0 m-2 p-[2px] rounded-full bg-[#191d20] dark:bg-lightGray ">
+      <div className="fixed top-0 right-0 m-2 p-[2px] space-x-2 rounded-full bg-[#191d20] dark:bg-lightGray ">
         <ThemeSwitcher />
         <Menu>
           <MenuButton className="p-2 text-lightGray dark:text-darkGray">
