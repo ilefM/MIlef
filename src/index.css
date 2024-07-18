@@ -28,6 +28,6 @@
 
 @layer base {
   body {
-    @apply dark:bg-darkGray transition ease-in-out duration-300;
+    @apply bg-[#e6c9af] dark:bg-[#191b1f] transition ease-in-out duration-700;
   }
 }

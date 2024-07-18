@@ -9,7 +9,7 @@ function Header() {
   const { i18n } = useTranslation();
   const [darkMode, setDarkMode] = useState(false);
   const [language, setLanguage] = useState(
-    i18n.language === 'fr' ? 'English' : 'Français'
+    i18n.language === 'fr' ? 'En' : 'Fr'
   );
 
   useEffect(() => {
@@ -34,10 +34,10 @@ function Header() {
 
   function changeLanguage() {
     if (i18n.language === 'fr') {
-      setLanguage('Français');
+      setLanguage('Fr');
       i18n.changeLanguage('en');
     } else {
-      setLanguage('English');
+      setLanguage('En');
       i18n.changeLanguage('fr');
     }
   }
@@ -47,14 +47,14 @@ function Header() {
       <>
         {!darkMode ? (
           <button
-            className="p-2 rounded-full bg-lightGray text-darkGray"
+            className="p-2 rounded-full bg-darkBackground text-slate-50"
             onClick={toggleDarkMode}
           >
             <MdDarkMode size={18} />
           </button>
         ) : (
           <button
-            className="p-2 rounded-full bg-darkGray text-lightGray"
+            className="p-2 rounded-full bg-background text-[#191b1f]"
             onClick={toggleDarkMode}
           >
             <MdLightMode size={18} />
@@ -66,10 +66,10 @@ function Header() {
 
   function MobileView() {
     return (
-      <div className="fixed top-0 right-0 m-2 p-[2px] space-x-2 rounded-full bg-[#191d20] dark:bg-lightGray ">
+      <div className="fixed top-0 right-0 m-2 p-[2px] space-x-2 rounded-lg bg-foreground dark:bg-darkForeground ">
         <ThemeSwitcher />
         <Menu>
-          <MenuButton className="p-2 text-lightGray dark:text-darkGray">
+          <MenuButton className="p-2 text-slate-50 dark:text-slate-50">
             <RiMenuFill size={18} />
           </MenuButton>
           <MenuItems
@@ -110,33 +110,37 @@ function Header() {
   function WebView() {
     // backdrop-blur-xl bg-lightGray/30 dark:bg-darkGray/30
     return (
-      <div className="w-full max-w-[600px] fixed top-0 right-auto left-1/2 -translate-x-1/2 my-2 p-1 mx-auto rounded-full flex justify-between bg-darkGray dark:bg-lightGray">
-        <img
-          className="w-[34px] rounded-full mr-2"
-          src={profilepic}
-          alt="profile picture"
-        />
-        <div className="flex items-center space-x-2 font-dosis text-lightGray dark:text-darkGray text-lg">
-          <a
-            className="px-2 rounded-lg  hover:scale-90 transition ease-out"
-            href=""
-          >
-            About
-          </a>
-          <a
-            className="px-2 rounded-lg hover:scale-90 transition ease-out"
-            href=""
-          >
-            Projects
-          </a>
-          <a
-            className="px-2 rounded-lg hover:scale-90 transition ease-out"
-            href=""
-          >
-            Contact me
-          </a>
+      <div className="w-full max-w-[620px] fixed top-0 right-auto left-1/2 -translate-x-1/2 my-2 p-1 mx-auto rounded-lg flex justify-between backdrop-blur-xl bg-foreground dark:bg-darkForeground">
+        <div className="flex items-center">
+          <img
+            className="w-[34px] rounded-full mr-2"
+            src={profilepic}
+            alt="profile picture"
+          />
+          <p className="font-dosisSemiBold text-lg text-textColor dark:text-slate-50">
+            Mohammed Ilef
+          </p>
         </div>
-        <ThemeSwitcher />
+        <div className="flex space-x-3">
+          <div className="flex items-center space-x-5 font-dosisSemiBold text-textColor dark:text-slate-50 text-lg">
+            <a className="hover:scale-90 transition ease-out" href="">
+              About
+            </a>
+            <a className="hover:scale-90 transition ease-out" href="">
+              Projects
+            </a>
+            <a className="hover:scale-90 transition ease-out" href="">
+              Contact me
+            </a>
+            <button
+              className="hover:scale-90 transition ease-out underline w-6"
+              onClick={changeLanguage}
+            >
+              {language}
+            </button>
+          </div>
+          <ThemeSwitcher />
+        </div>
       </div>
     );
   }
