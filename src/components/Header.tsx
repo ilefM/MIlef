@@ -110,7 +110,7 @@ function Header() {
   function WebView() {
     // backdrop-blur-xl bg-lightGray/30 dark:bg-darkGray/30
     return (
-      <div className="w-full max-w-[620px] fixed top-0 right-auto left-1/2 -translate-x-1/2 my-2 p-1 mx-auto rounded-lg flex justify-between backdrop-blur-xl bg-foreground dark:bg-darkForeground">
+      <div className="w-full max-w-[620px] max-auto fixed top-0 right-auto left-1/2 -translate-x-1/2 my-2 p-1 rounded-lg flex justify-between backdrop-blur-xl bg-foreground dark:bg-darkForeground">
         <div className="flex items-center">
           <img
             className="w-[34px] rounded-full mr-2"
