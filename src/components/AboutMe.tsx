@@ -8,15 +8,15 @@ function AboutMe() {
   const { t } = useTranslation();
 
   return (
-    <div className="border-2 flex flex-col mx-auto items-center w-full">
-      <div className="border-2 flex flex-col sm:flex-row sm:space-x-14 sm:justify-between w-full items-center mt-4">
+    <div className="flex flex-col mx-auto items-center w-full">
+      <div className="w-full max-w-[620px] flex flex-col sm:flex-row sm:justify-between  items-center mt-4">
         <img
           className="order-1 sm:order-2 w-[170px] shadow-lg rounded-full"
           src={profilepic}
           alt="profile picture"
         />
-        <div className="border-2 flex flex-col items-center sm:items-start">
-          <p className="text-xl mt-4 sm:text-4xl">Mohammed Ilef</p>
+        <div className="order-2 sm:order-1 flex flex-col items-center sm:items-start">
+          <p className="text-xl mt-8 sm:text-4xl">Mohammed Ilef</p>
           <h1 className="text-7xl sm:text-9xl font-dosis">Ikhelef</h1>
           <div className="flex space-x-4 mt-4">
             <div className="bg-foreground dark:bg-darkForeground rounded-md p-1">
