@@ -6,7 +6,7 @@ import { RiMenuFill } from 'react-icons/ri';
 import profilepic from '../assets/profilepic.png';
 
 function Header() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [darkMode, setDarkMode] = useState(false);
   const [language, setLanguage] = useState(
     i18n.language === 'fr' ? 'En' : 'Fr'
@@ -69,27 +69,27 @@ function Header() {
       <div className="fixed top-0 right-0 m-2 p-[2px] space-x-2 rounded-lg bg-foreground dark:bg-darkForeground ">
         <ThemeSwitcher />
         <Menu>
-          <MenuButton className="p-2 text-slate-50 dark:text-slate-50">
+          <MenuButton className="p-2 text-textColor dark:text-slate-50">
             <RiMenuFill size={18} />
           </MenuButton>
           <MenuItems
             transition
             anchor="bottom end"
-            className="w-40 mt-2 rounded-lg bg-white border-2 border-gray-100 shadow-lg p-1 text-sm/6 text-neutral-700 transition duration-100 ease-out focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+            className="sm:hidden w-40 mt-2 rounded-lg bg-foreground dark:bg-darkForeground shadow-lg p-1 text-sm/6 text-textColor dark:text-slate-50 transition duration-100 ease-out focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
           >
             <MenuItem>
               <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-gray-100">
-                About me
+                {t('navigation.about')}
               </button>
             </MenuItem>
             <MenuItem>
               <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-gray-100">
-                My work
+                {t('navigation.project')}
               </button>
             </MenuItem>
             <MenuItem>
               <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-gray-100">
-                Contact me
+                {t('navigation.contactme')}
               </button>
             </MenuItem>
             <MenuItem>
@@ -117,20 +117,20 @@ function Header() {
             src={profilepic}
             alt="profile picture"
           />
-          <p className="font-dosisSemiBold text-lg text-textColor dark:text-slate-50">
+          <p className="font-dosisSemiBold text-md text-textColor dark:text-slate-50">
             Mohammed Ilef
           </p>
         </div>
         <div className="flex space-x-3">
-          <div className="flex items-center space-x-5 font-dosisSemiBold text-textColor dark:text-slate-50 text-lg">
+          <div className="flex items-center space-x-5 font-dosisSemiBold text-textColor dark:text-slate-50 text-md">
             <a className="hover:scale-90 transition ease-out" href="">
-              About
+              {t('navigation.about')}
             </a>
             <a className="hover:scale-90 transition ease-out" href="">
-              Projects
+              {t('navigation.project')}
             </a>
             <a className="hover:scale-90 transition ease-out" href="">
-              Contact me
+              {t('navigation.contactme')}
             </a>
             <button
               className="hover:scale-90 transition ease-out underline w-6"
