@@ -110,36 +110,38 @@ function Header() {
   function WebView() {
     // backdrop-blur-xl bg-lightGray/30 dark:bg-darkGray/30
     return (
-      <div className="w-full max-w-[620px] max-auto fixed top-0 right-auto left-1/2 -translate-x-1/2 my-2 p-1 rounded-lg flex justify-between backdrop-blur-xl bg-foreground dark:bg-darkForeground">
-        <div className="flex items-center">
-          <img
-            className="w-[34px] rounded-full mr-2"
-            src={profilepic}
-            alt="profile picture"
-          />
-          <p className="font-dosisSemiBold text-md text-textColor dark:text-slate-50">
-            Mohammed Ilef
-          </p>
-        </div>
-        <div className="flex space-x-3">
-          <div className="flex items-center space-x-5 font-dosisSemiBold text-textColor dark:text-slate-50 text-md">
-            <a className="hover:scale-90 transition ease-out" href="">
-              {t('navigation.about')}
-            </a>
-            <a className="hover:scale-90 transition ease-out" href="">
-              {t('navigation.project')}
-            </a>
-            <a className="hover:scale-90 transition ease-out" href="">
-              {t('navigation.contactme')}
-            </a>
-            <button
-              className="hover:scale-90 transition ease-out underline w-6"
-              onClick={changeLanguage}
-            >
-              {language}
-            </button>
+      <div className="w-full max-w-[800px] px-3 fixed top-0 right-auto left-1/2 -translate-x-1/2 my-2">
+        <div className="max-auto py-2 px-4 rounded-lg flex justify-between backdrop-blur-xl bg-foreground dark:bg-darkForeground">
+          <div className="flex items-center">
+            <img
+              className="w-[34px] rounded-full mr-2"
+              src={profilepic}
+              alt="profile picture"
+            />
+            <p className="font-dosisSemiBold text-md text-textColor dark:text-slate-50">
+              Mohammed Ilef
+            </p>
           </div>
-          <ThemeSwitcher />
+          <div className="flex space-x-3">
+            <div className="flex items-center space-x-5 font-dosisSemiBold text-textColor dark:text-slate-50 text-md">
+              <a className="hover:scale-90 transition ease-out" href="">
+                {t('navigation.about')}
+              </a>
+              <a className="hover:scale-90 transition ease-out" href="">
+                {t('navigation.project')}
+              </a>
+              <a className="hover:scale-90 transition ease-out" href="">
+                {t('navigation.contactme')}
+              </a>
+              <button
+                className="hover:scale-90 transition ease-out underline w-6"
+                onClick={changeLanguage}
+              >
+                {language}
+              </button>
+            </div>
+            <ThemeSwitcher />
+          </div>
         </div>
       </div>
     );
