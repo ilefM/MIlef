@@ -6,10 +6,12 @@ import Projects from './components/Projects';
 function App() {
   return (
     <Suspense fallback="loading">
-      <Header />
-      <div className="w-full mx-auto px-4 max-w-[900px] mt-20 flex flex-col text-textColor dark:text-slate-50 font-dosis">
-        <AboutMe />
-        <Projects />
+      <div className="w-full max-w-[800px] mx-auto px-4">
+        <Header />
+        <div className="mt-40 flex flex-col text-textColor dark:text-slate-50 font-dosis">
+          <AboutMe />
+          <Projects />
+        </div>
       </div>
     </Suspense>
   );
