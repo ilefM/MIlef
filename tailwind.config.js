@@ -11,8 +11,8 @@ export default {
         dosisLight: ['Dosis Light'],
       },
       colors: {
-        background: '#e6c9af',
-        foreground: '#fae7d7',
+        background: '#dbc6b6',
+        foreground: '#efe9db',
         darkBackground: '#191b1f',
         darkForeground: '#272a30',
         textColor: '#333533',

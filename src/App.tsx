@@ -5,7 +5,7 @@ import Projects from './components/Projects';
 
 function App() {
   return (
-    <Suspense fallback="loading">
+    <Suspense fallback="loading i18n translation">
       <Header />
       <div className="w-full mx-auto px-4 max-w-[900px] mt-20 flex flex-col text-textColor dark:text-slate-50 font-dosis">
         <AboutMe />
