@@ -3,7 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      screens: {},
+      screens: {
+        sm: '600px'
+      },
       fontFamily: {
         dosis: ['Dosis'],
         dosisBold: ['Dosis Bold'],
