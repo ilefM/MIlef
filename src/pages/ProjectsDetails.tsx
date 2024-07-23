@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { projects } from '../components/Projects';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { projects } from '../data/projectsData';
 
 function ProjectsDetails() {
   const { t } = useTranslation();
@@ -19,7 +19,7 @@ function ProjectsDetails() {
               src={p.url}
               className="w-full max-h-60 sm:max-w-72 sm:h-full object-contain"
             />
-            <div className="flex flex-col sm:justify-between mt-4 sm:mt-0 sm:ml-4">
+            <div className="flex flex-col sm:justify-between mt-4 sm:mt-0 sm:ml-6">
               <div>
                 <p className="text-xl">{p.title}</p>
                 <p className="mt-2">{p.description}</p>

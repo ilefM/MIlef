@@ -77,11 +77,11 @@ function Header() {
             transition
             modal={false}
             anchor="bottom end"
-            className="sm:hidden w-40 mt-2 rounded-lg bg-foreground dark:bg-darkForeground shadow-lg p-1 text-sm/6 text-textColor dark:text-slate-50 transition duration-100 ease-out focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+            className="sm:hidden w-40 mt-2 rounded-lg bg-foreground dark:bg-darkForeground shadow-lg p-1 text-md text-textColor dark:text-slate-50 transition duration-100 ease-out focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
           >
             <MenuItem>
               <Link
-                className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-[#faf7f1] data-[focus]:dark:bg-[#43454b]"
+                className="group flex w-full items-center gap-2 rounded-lg py-2 px-3 data-[focus]:bg-[#faf7f1] data-[focus]:dark:bg-[#43454b]"
                 to={'/'}
               >
                 {t('navigation.about')}
@@ -89,7 +89,7 @@ function Header() {
             </MenuItem>
             <MenuItem>
               <Link
-                className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-[#faf7f1] data-[focus]:dark:bg-[#43454b]"
+                className="group flex w-full items-center gap-2 rounded-lg py-2 px-3 data-[focus]:bg-[#faf7f1] data-[focus]:dark:bg-[#43454b]"
                 to={'/projects'}
               >
                 {t('navigation.project')}
@@ -97,7 +97,7 @@ function Header() {
             </MenuItem>
             <MenuItem>
               <Link
-                className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-[#faf7f1] data-[focus]:dark:bg-[#43454b]"
+                className="group flex w-full items-center gap-2 rounded-lg py-2 px-3 data-[focus]:bg-[#faf7f1] data-[focus]:dark:bg-[#43454b]"
                 to={'contactme'}
               >
                 {t('navigation.contactme')}
@@ -105,7 +105,7 @@ function Header() {
             </MenuItem>
             <MenuItem>
               <button
-                className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-[#faf7f1] data-[focus]:dark:bg-[#43454b]"
+                className="group flex w-full items-center gap-2 rounded-lg py-2 px-3 data-[focus]:bg-[#faf7f1] data-[focus]:dark:bg-[#43454b]"
                 onClick={changeLanguage}
               >
                 <MdOutlineLanguage />
@@ -129,9 +129,11 @@ function Header() {
               src={profilepic}
               alt="profile picture"
             />
-            <p className="font-dosisSemiBold text-md text-textColor dark:text-slate-50">
-              Mohammed Ilef
-            </p>
+            <Link to={'/'}>
+              <p className="font-dosisSemiBold text-md text-textColor dark:text-slate-50">
+                Mohammed Ilef
+              </p>
+            </Link>
           </div>
           <div className="flex space-x-3">
             <div className="flex items-center space-x-5 font-dosisSemiBold text-textColor dark:text-slate-50 text-md">

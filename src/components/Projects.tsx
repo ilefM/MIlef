@@ -1,43 +1,12 @@
-import fikra from '../assets/fikra.png';
-import sortingVisualiser from '../assets/sortingVisualiser.png';
-import passwordGenerator from '../assets/passwordGenerator.png';
 import { useTranslation } from 'react-i18next';
-
-export const projects = [
-  {
-    id: 1,
-    url: fikra,
-    title: 'Fikra',
-    live: 'https://fikra.vercel.app',
-    github: 'https://github.com/ilefM/fikra',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam massa urna. Quisque pellentesque libero finibus turpis ullamcorper vestibulum. Aliquam vel tellus neque. Aenean ac condimentum urna. habitasse platea dictumst. Donec porttitor justo et ligula euismod commodo.',
-  },
-  {
-    id: 2,
-    url: sortingVisualiser,
-    title: 'Sorting Algorithm Visualiser',
-    live: 'https://ilefm.github.io/sorting-visualiser',
-    github: 'https://github.com/ilefM/sorting-visualiser',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam massa urna. Quisque pellentesque libero finibus turpis ullamcorper vestibulum. Aliquam vel tellus neque. Aenean ac condimentum urna. habitasse platea dictumst. Donec porttitor justo et ligula euismod commodo.',
-  },
-  {
-    id: 3,
-    url: passwordGenerator,
-    title: 'Password Generator',
-    live: 'https://ilefm.github.io/password-generator',
-    github: 'https://github.com/ilefM/password-generator',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam massa urna. Quisque pellentesque libero finibus turpis ullamcorper vestibulum. Aliquam vel tellus neque. Aenean ac condimentum urna. habitasse platea dictumst. Donec porttitor justo et ligula euismod commodo.',
-  },
-];
+import { projects } from '../data/projectsData';
+import { Link } from 'react-router-dom';
 
 function Projects() {
   const { t } = useTranslation();
 
   return (
-    <div className="mt-16 w-full">
+    <div className="mt-8 w-full">
       <p className="text-2xl font-dosis text-textColor dark:text-slate-50 text-nowrap">
         {t('petProjects.title')}
       </p>
@@ -45,13 +14,15 @@ function Projects() {
       <div className="flex flex-col sm:flex-row items-center mt-2 justify-center sm:justify-between -mx-2">
         {projects.map((p) => (
           <div
-            className="flex flex-col m-2 w-64 max-w-full h-48 bg-foreground dark:bg-darkForeground rounded-lg shadow-lg overflow-hidden"
+            className="flex flex-col m-2 w-64 max-w-full h-48 bg-foreground dark:bg-darkForeground rounded-lg shadow-lg overflow-hidden hover:shadow-xl"
             key={p.id}
           >
-            <img src={p.url} className="w-full h-36 object-contain p-4" />
-            <div className="px-4">
-              <h2 className="text-lg">{p.title}</h2>
-            </div>
+            <Link to={'projects'}>
+              <img src={p.url} className="w-full h-36 object-contain p-4" />
+              <div className="px-4">
+                <h2 className="text-lg">{p.title}</h2>
+              </div>
+            </Link>
           </div>
         ))}
       </div>
