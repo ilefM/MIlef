@@ -24,12 +24,17 @@ function ProjectsDetails() {
                 <p className="text-xl">{p.title}</p>
                 <p className="mt-2">{p.description}</p>
               </div>
-              <div className="flex space-x-6 mt-6">
+              <div className="flex flex-col justify-start space-y-2 mt-6">
                 <Link to={p.github} target="_blank" rel="noopener noreferrer">
-                  <FaGithub size={20} />
+                  <div className="sm:max-w-[200px] p-1 bg-buttonColor dark:bg-darkButtonColor hover:bg-buttonColorHover dark:hover:bg-darkButtonColorHover rounded-md flex space-x-2 items-center justify-center text-slate-50 text-lg">
+                    <FaGithub size={20} /> <p>Source code</p>
+                  </div>
                 </Link>
                 <Link to={p.live} target="_blank" rel="noopener noreferrer">
-                  <FaExternalLinkAlt size={20} />
+                  <div className="sm:max-w-[200px] min-w-1/2 p-1 bg-buttonColor dark:bg-darkButtonColor hover:bg-buttonColorHover dark:hover:bg-darkButtonColorHover rounded-md flex space-x-2 items-center justify-center text-slate-50 text-lg">
+                    <FaExternalLinkAlt size={19} />{' '}
+                    <p>Visit the live version</p>
+                  </div>
                 </Link>
               </div>
             </div>

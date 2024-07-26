@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        sm: '600px'
+        sm: '600px',
       },
       fontFamily: {
         dosis: ['Dosis'],
@@ -18,6 +18,10 @@ export default {
         darkBackground: '#191b1f',
         darkForeground: '#272a30',
         textColor: '#333533',
+        buttonColor: '#729981',
+        buttonColorHover: '#5B896C',
+        darkButtonColor: '#6fcaf5',
+        darkButtonColorHover: '#49bcf1',
       },
     },
   },

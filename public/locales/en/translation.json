@@ -6,10 +6,13 @@
   },
   "about": {
     "title": "About me",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam massa urna. Quisque pellentesque libero finibus turpis ullamcorper vestibulum. Aliquam vel tellus neque. Aenean ac condimentum urna. habitasse platea dictumst. Donec porttitor justo et ligula euismod commodo."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam massa urna. Quisque pellentesque libero finibus turpis ullamcorper vestibulum. Aliquam vel tellus neque. Aenean ac condimentum urna. habitasse platea dictumst. Donec porttitor justo et ligula euismod commodo.",
+    "downloadPDF": "Download PDF"
   },
   "petProjects": {
     "title": "Pet projects",
-    "indication": "Click on any project to see it's description, live version and source code."
+    "indication": "Click on any project to see it's description, live version and source code.",
+    "sourceCode": "Source code",
+    "liveVersion": "Visit the live version"
   }
 }

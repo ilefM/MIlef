@@ -2,14 +2,17 @@
   "navigation": {
     "about": "À propos",
     "project": "Projets",
-    "contactme": "Contactez moi"
+    "contactme": "Me contacter"
   },
   "about": {
     "title": "À propos",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam massa urna. Quisque pellentesque libero finibus turpis ullamcorper vestibulum. Aliquam vel tellus neque. Aenean ac condimentum urna. habitasse platea dictumst. Donec porttitor justo et ligula euismod commodo."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam massa urna. Quisque pellentesque libero finibus turpis ullamcorper vestibulum. Aliquam vel tellus neque. Aenean ac condimentum urna. habitasse platea dictumst. Donec porttitor justo et ligula euismod commodo.",
+    "downloadPDF": "Télécharger PDF"
   },
   "petProjects": {
     "title": "Projets personnels",
-    "indication": "Cliquez sur un projet pour voir sa description, la version live ainsi que le code source. "
+    "indication": "Cliquez sur un projet pour voir sa description, la version live ainsi que le code source. ",
+    "sourceCode": "Code source",
+    "liveVersion": "Visitez la version live"
   }
 }

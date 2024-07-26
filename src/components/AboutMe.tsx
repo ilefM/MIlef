@@ -86,11 +86,11 @@ function AboutMe() {
           <p className="text-2xl">Curruculum Vitae</p>
           <div className="mt-2 sm:mx-auto">
             <button
-              className="mt-2 w-full sm:w-[160px] border-[#49bcf1] flex justify-center items-center space-x-2 bg-[#6fcaf5] hover:bg-[#49bcf1] text-slate-50 text-lg rounded-md py-1 px-3"
+              className="mt-2 w-full sm:w-fit flex justify-center items-center space-x-2 bg-buttonColor dark:bg-darkButtonColor hover:bg-buttonColorHover dark:hover:bg-darkButtonColorHover text-slate-50 text-lg rounded-md py-1 px-3"
               onClick={downloadCV}
             >
-              <LuDownload />
-              <p className="font-dosisSemiBold">Download PDF</p>
+              <LuDownload size={20} />
+              <p className="font-dosisSemiBold">{t('about.downloadPDF')}</p>
             </button>
           </div>
         </div>
