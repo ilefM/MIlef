@@ -6,12 +6,12 @@
   },
   "about": {
     "title": "À propos",
-    "description": "Allo ! Je m'appelle Mohammed Ilef, jeune diplômé en informatique passionné par la résolution de problèmes à travers le développement de logiciels robustes et de solutions évolutives avec des technologies modernes. Mon parcours académique, mes projets personnels et mes expériences professionnelles m'ont doté des compétences nécessaires pour relever de nouveaux défis et saisir de nouvelles opportunités.",
+    "description": "Allo! Je m'appelle Mohammed Ilef, jeune diplômé en informatique et passionné par la technologie. J'aime résoudre des problèmes en développant des logiciels robustes et des solutions évolutives avec des technologies modernes. Mon parcours académique, mes projets personnels et mes expériences professionnelles m'ont doté des compétences nécessaires pour relever de nouveaux défis et saisir de nouvelles opportunités.",
     "downloadCV": "Télécharger CV"
   },
   "petProjects": {
     "title": "Projets personnels",
-    "indication": "Cliquez sur un projet pour voir sa description, la version live ainsi que le code source. ",
+    "seeMore": "Plus de détails",
     "sourceCode": "Code source",
     "liveVersion": "Visitez la version live",
     "fikra": {

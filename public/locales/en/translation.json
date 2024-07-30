@@ -6,12 +6,12 @@
   },
   "about": {
     "title": "About me",
-    "description": "Hello! I'm Mohammed Ilef, a recent computer science graduate with a passion for solving problems through the development of robust software and scalable solutions using modern technologies. My academic background, personal projects, and professional experiences have equipped me with the skills and readiness to embrace new challenges and opportunities.",
+    "description": "Hello! I'm Mohammed Ilef, a recent computer science graduate with a passion for technology. I love solving problems by developping robust software and scalable solutions using modern technologies. My academic background, personal projects, and professional experiences have equipped me with the skills and readiness to embrace new challenges and opportunities.",
     "downloadCV": "Download CV"
   },
   "petProjects": {
     "title": "Pet projects",
-    "indication": "Click on any project to see it's description, live version and source code.",
+    "seeMore": "More details",
     "sourceCode": "Source code",
     "liveVersion": "Visit the live version",
     "fikra": {

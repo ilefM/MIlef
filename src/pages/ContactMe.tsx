@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { MdOutlineMailOutline } from 'react-icons/md';
-import { FaLinkedin } from 'react-icons/fa';
+import { AiOutlineLinkedin } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 function ContactMe() {
@@ -21,7 +21,7 @@ function ContactMe() {
 
           <div className="flex items-center space-x-2">
             <div className="rounded-full bg-buttonColor dark:bg-darkButtonColor p-1.5">
-              <FaLinkedin size={20} color="white" />
+              <AiOutlineLinkedin size={20} color="white" />
             </div>
             <Link
               className="hover:underline text-lg"
