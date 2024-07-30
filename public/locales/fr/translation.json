@@ -19,7 +19,7 @@
       "description": "Un projet full-stack qui est une plateforme pour les développeurs pour partager leurs idées de projets personnels. Il inclut des opérations CRUD sur les publications. Actuellement, je travaille sur l'authentification et l'autorisation de l'application. Le frontend est réalisé avec React, TypeScript et TailwindCSS, tandis que le backend utilise NestJS, TypeScript, PostgreSQL et Prisma. Pour le processus CI/CD, j'utilise GitHub Actions et Render (avec le niveau gratuit pour la livraison continue). La base de données de production est hébergée sur Supabase."
     },
     "sortingAlgorithm": {
-      "title": "Visualisateur d'algorithmes de tri",
+      "title": "Visualisateur de tri",
       "description": "Une application simple réalisée avec du JavaScript (vanilla), HTML et CSS. Le but de l'application est de visualiser le tri de barres pour chaque algorithme de tri. L'utilisateur peut générer autant de barres qu'il le souhaite avec des longueurs aléatoires, puis appuyer sur le bouton de démarrage pour les trier. Le temps d'exécution est affiché une fois le tri terminé. L'application est hébergée sur GitHub Pages."
     },
     "passwordGenerator": {

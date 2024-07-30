@@ -26,6 +26,8 @@ function ContactMe() {
             <Link
               className="hover:underline text-lg"
               to="https://www.linkedin.com/in/mohammed-ilef-ikhelef-70935a1b2/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {t('contactme.linkedIn')}
             </Link>

@@ -4,6 +4,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { LuDownload } from 'react-icons/lu';
+import { Link } from 'react-router-dom';
 
 function AboutMe() {
   const { t, i18n } = useTranslation();
@@ -33,31 +34,31 @@ function AboutMe() {
 
           <div className="order-3 flex justify-between mt-4 space-x-3">
             <div className="bg-foreground dark:bg-darkForeground rounded-md p-1">
-              <a
-                href="https://github.com/ilefM"
+              <Link
+                to="https://github.com/ilefM"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaGithub size={24} />
-              </a>
+              </Link>
             </div>
             <div className="bg-foreground dark:bg-darkForeground rounded-md p-1">
-              <a
-                href="https://www.linkedin.com/in/mohammed-ilef-ikhelef-70935a1b2/"
+              <Link
+                to="https://www.linkedin.com/in/mohammed-ilef-ikhelef-70935a1b2/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin size={24} />
-              </a>
+              </Link>
             </div>
             <div className="bg-foreground dark:bg-darkForeground rounded-md p-1">
-              <a
-                href="https://www.instagram.com/ilef.m.i/"
+              <Link
+                to="https://www.instagram.com/ilef.m.i/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaInstagram size={24} />
-              </a>
+              </Link>
             </div>
           </div>
           <button
