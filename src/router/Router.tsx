@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import Layout from './Layout';
 import ProjectsDetails from '../pages/ProjectsDetails';
-import ContactMe from '../components/ContactMe';
+import ContactMe from '../pages/ContactMe';
 
 export default function Router() {
   return (

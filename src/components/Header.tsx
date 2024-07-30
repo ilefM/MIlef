@@ -137,25 +137,10 @@ function Header() {
           </div>
           <div className="flex space-x-3">
             <div className="flex items-center space-x-5 font-dosisSemiBold text-textColor dark:text-slate-50 text-md">
-              <Link className="hover:scale-90 transition ease-out" to="/">
-                {t('navigation.about')}
-              </Link>
-              <Link
-                className="hover:scale-90 transition ease-out"
-                to="projects"
-              >
-                {t('navigation.project')}
-              </Link>
-              <Link
-                className="hover:scale-90 transition ease-out"
-                to="contactme"
-              >
-                {t('navigation.contactme')}
-              </Link>
-              <button
-                className="hover:scale-90 transition ease-out underline w-6"
-                onClick={changeLanguage}
-              >
+              <Link to="/">{t('navigation.about')}</Link>
+              <Link to="projects">{t('navigation.project')}</Link>
+              <Link to="contactme">{t('navigation.contactme')}</Link>
+              <button className="underline w-6" onClick={changeLanguage}>
                 {language}
               </button>
             </div>

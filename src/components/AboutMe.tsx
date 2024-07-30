@@ -19,19 +19,6 @@ function AboutMe() {
     document.body.removeChild(link);
   }
 
-  // function DownloadCV() {
-  //   return (
-  //     <div className="flex flex-col justify-between items-center mt-5 sm:mt-0 bg-foreground dark:bg-darkForeground rounded-lg p-2">
-  //       <p className="text-center text-lg">Curruculum Vitae</p>
-  //       <img src={pdfImage} className="w-[120px] mx-auto px-3 rounded-xl" />
-  //       <button className="flex w-full mx-8 justify-center items-center space-x-2 bg-[#ff8888] hover:bg-[#fd6767] text-slate-50 text-md rounded-md py-1 px-3">
-  //         <LuDownload />
-  //         <p>Download</p>
-  //       </button>
-  //     </div>
-  //   );
-  // }
-
   return (
     <div className="flex flex-col mx-auto items-center w-full">
       <div className="w-full flex flex-col sm:flex-row sm:justify-between  items-center mt-4">
@@ -43,7 +30,8 @@ function AboutMe() {
         <div className="order-2 sm:order-1 flex flex-col items-center sm:items-start sm:justify-between">
           <p className="text-xl mt-8 sm:text-4xl">Mohammed Ilef</p>
           <h1 className="text-7xl sm:text-9xl font-dosis">Ikhelef</h1>
-          <div className="order-3 flex space-x-4 mt-4">
+
+          <div className="order-3 flex justify-between mt-4 space-x-3">
             <div className="bg-foreground dark:bg-darkForeground rounded-md p-1">
               <a
                 href="https://github.com/ilefM"
@@ -72,6 +60,13 @@ function AboutMe() {
               </a>
             </div>
           </div>
+          <button
+            className="order-4 mt-8 flex justify-center items-center space-x-2 bg-buttonColor dark:bg-darkButtonColor hover:bg-buttonColorHover dark:hover:bg-darkButtonColorHover text-slate-50 text-lg rounded-md py-1 px-3"
+            onClick={downloadCV}
+          >
+            <LuDownload size={20} />
+            <p className="font-dosisSemiBold">{t('about.downloadCV')}</p>
+          </button>
         </div>
       </div>
 
@@ -80,18 +75,6 @@ function AboutMe() {
         <div className="mt-2 flex flex-col sm:flex-row sm:space-x-5 justify-between">
           <div className="bg-foreground dark:bg-darkForeground rounded-md p-4 h-fit">
             <p>{t('about.description')}</p>
-          </div>
-        </div>
-        <div className="mt-8 lex flex-col">
-          <p className="text-2xl">Curruculum Vitae</p>
-          <div className="mt-2 sm:mx-auto">
-            <button
-              className="mt-2 w-full sm:w-fit flex justify-center items-center space-x-2 bg-buttonColor dark:bg-darkButtonColor hover:bg-buttonColorHover dark:hover:bg-darkButtonColorHover text-slate-50 text-lg rounded-md py-1 px-3"
-              onClick={downloadCV}
-            >
-              <LuDownload size={20} />
-              <p className="font-dosisSemiBold">{t('about.downloadPDF')}</p>
-            </button>
           </div>
         </div>
       </div>

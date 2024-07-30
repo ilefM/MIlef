@@ -2,17 +2,34 @@
   "navigation": {
     "about": "About",
     "project": "Projects",
-    "contactme": "Contact me"
+    "contactme": "Contact"
   },
   "about": {
     "title": "About me",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam massa urna. Quisque pellentesque libero finibus turpis ullamcorper vestibulum. Aliquam vel tellus neque. Aenean ac condimentum urna. habitasse platea dictumst. Donec porttitor justo et ligula euismod commodo.",
-    "downloadPDF": "Download PDF"
+    "description": "Hello! I'm Mohammed Ilef, a recent computer science graduate with a passion for solving problems through the development of robust software and scalable solutions using modern technologies. My academic background, personal projects, and professional experiences have equipped me with the skills and readiness to embrace new challenges and opportunities.",
+    "downloadCV": "Download CV"
   },
   "petProjects": {
     "title": "Pet projects",
     "indication": "Click on any project to see it's description, live version and source code.",
     "sourceCode": "Source code",
-    "liveVersion": "Visit the live version"
+    "liveVersion": "Visit the live version",
+    "fikra": {
+      "title": "Fikra",
+      "description": "This full-stack project is a platform for developers to share their pet project ideas. It includes CRUD operations on posts. Currently, I am working on the authentication and authorization for the app. The frontend is built with React, TypeScript, and TailwindCSS, while the backend uses NestJS, TypeScript, PostgreSQL, and Prisma. For the CI/CD process, I am using GitHub Actions and Render (with the free tier for continuous delivery). The production database is hosted on Supabase."
+    },
+    "sortingAlgorithm": {
+      "title": "Sorting Algorithm Visualiser",
+      "description": "A simple app made with vanilla JavaScript, HTML, and CSS. The goal of the app is to visualize the sorting of pipes for each sorting algorithm. The user can generate as many pipes as they want with random lengths, then press the start button to sort them. The execution time is displayed once the sorting is completed. The app is hosted on GitHub Pages."
+    },
+    "passwordGenerator": {
+      "title": "Password Generator",
+      "description": "A password generator app made with React, TypeScript, and Styled Components. The user can choose the criteria for the password and generate as many as they want. The app is documented in the README file on GitHub. It is hosted on GitHub Pages."
+    }
+  },
+  "contactme": {
+    "title": "Contact me",
+    "email": "ilefikhelef@outlook.com",
+    "linkedIn": "Contact me on LinkedIn"
   }
 }

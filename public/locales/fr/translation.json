@@ -2,17 +2,34 @@
   "navigation": {
     "about": "À propos",
     "project": "Projets",
-    "contactme": "Me contacter"
+    "contactme": "Contact"
   },
   "about": {
     "title": "À propos",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam massa urna. Quisque pellentesque libero finibus turpis ullamcorper vestibulum. Aliquam vel tellus neque. Aenean ac condimentum urna. habitasse platea dictumst. Donec porttitor justo et ligula euismod commodo.",
-    "downloadPDF": "Télécharger PDF"
+    "description": "Allo ! Je m'appelle Mohammed Ilef, jeune diplômé en informatique passionné par la résolution de problèmes à travers le développement de logiciels robustes et de solutions évolutives avec des technologies modernes. Mon parcours académique, mes projets personnels et mes expériences professionnelles m'ont doté des compétences nécessaires pour relever de nouveaux défis et saisir de nouvelles opportunités.",
+    "downloadCV": "Télécharger CV"
   },
   "petProjects": {
     "title": "Projets personnels",
     "indication": "Cliquez sur un projet pour voir sa description, la version live ainsi que le code source. ",
     "sourceCode": "Code source",
-    "liveVersion": "Visitez la version live"
+    "liveVersion": "Visitez la version live",
+    "fikra": {
+      "title": "Fikra",
+      "description": "Un projet full-stack qui est une plateforme pour les développeurs pour partager leurs idées de projets personnels. Il inclut des opérations CRUD sur les publications. Actuellement, je travaille sur l'authentification et l'autorisation de l'application. Le frontend est réalisé avec React, TypeScript et TailwindCSS, tandis que le backend utilise NestJS, TypeScript, PostgreSQL et Prisma. Pour le processus CI/CD, j'utilise GitHub Actions et Render (avec le niveau gratuit pour la livraison continue). La base de données de production est hébergée sur Supabase."
+    },
+    "sortingAlgorithm": {
+      "title": "Visualisateur d'algorithmes de tri",
+      "description": "Une application simple réalisée avec du JavaScript (vanilla), HTML et CSS. Le but de l'application est de visualiser le tri de barres pour chaque algorithme de tri. L'utilisateur peut générer autant de barres qu'il le souhaite avec des longueurs aléatoires, puis appuyer sur le bouton de démarrage pour les trier. Le temps d'exécution est affiché une fois le tri terminé. L'application est hébergée sur GitHub Pages."
+    },
+    "passwordGenerator": {
+      "title": "Générateur de mots de passes",
+      "description": "Une application de générateur de mots de passe réalisée avec React, TypeScript et Styled Components. L'utilisateur peut choisir les critères pour le mot de passe et en générer autant qu'il le souhaite. L'application est documentée dans le fichier README sur GitHub. l'application est hébergée sur GitHub Pages."
+    }
+  },
+  "contactme": {
+    "title": "Contactez moi",
+    "email": "ilefikhelef@outlook.com",
+    "linkedIn": "Me contacter sur LinkedIn"
   }
 }
