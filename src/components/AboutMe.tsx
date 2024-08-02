@@ -11,7 +11,9 @@ function AboutMe() {
 
   function downloadCV() {
     const pdfUrl =
-      i18n.language === 'en' ? 'milefCVenglish.pdf' : 'milefCV.pdf';
+      i18n.language === 'en-US' ? 'milefCVenglish.pdf' : 'milefCV.pdf';
+    console.log(i18n.language);
+    console.log(pdfUrl);
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = pdfUrl;
