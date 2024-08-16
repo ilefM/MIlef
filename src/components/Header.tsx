@@ -119,7 +119,6 @@ function Header() {
   }
 
   function WebView() {
-    // backdrop-blur-xl bg-lightGray/30 dark:bg-darkGray/30
     return (
       <div className="w-full max-w-[800px] px-4 fixed top-0 right-auto left-1/2 -translate-x-1/2 my-2">
         <div className="max-auto py-2 px-6 rounded-lg flex justify-between backdrop-blur-xl bg-foreground dark:bg-darkForeground">
