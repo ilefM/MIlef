@@ -20,11 +20,11 @@
     },
     "sortingAlgorithm": {
       "title": "Sorting Algorithm Visualiser",
-      "description": "A simple app made with vanilla JavaScript, HTML, and CSS. The goal of the app is to visualize the sorting of pipes for each sorting algorithm. The user can generate as many pipes as they want with random lengths, then press the start button to sort them. The execution time is displayed once the sorting is completed. The app is hosted on GitHub Pages."
+      "description": "A simple app made with vanilla JavaScript, HTML, and CSS. The goal of the app is to visualize the sorting of pipes for each sorting algorithm. The user can generate as many pipes as he wants with random lengths, then presses the start button to sort them. The execution time is displayed once the sorting is completed. The app is hosted on GitHub Pages."
     },
     "passwordGenerator": {
       "title": "Password Generator",
-      "description": "A password generator app made with React, TypeScript, and Styled Components. The user can choose the criteria for the password and generate as many as they want. The app is documented in the README file on GitHub. It is hosted on GitHub Pages."
+      "description": "A password generator app made with React, TypeScript, and Styled Components. The user can choose the criteria for the password and generates as many as they want. The app is documented in the README file on GitHub. It is hosted on GitHub Pages."
     }
   },
   "contactme": {
