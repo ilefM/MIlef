@@ -55,7 +55,7 @@ function AboutMe() {
             </div>
             <div className="bg-foreground dark:bg-darkForeground rounded-md p-1">
               <Link
-                to="https://www.instagram.com/milefdev/"
+                to="https://www.instagram.com/ilefffou/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
