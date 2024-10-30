@@ -23,7 +23,7 @@ function AboutMe() {
   }
 
   return (
-    <div className="flex flex-col mx-auto items-center w-full">
+    <div className="flex flex-col mx-auto items-center w-full mt-10">
       <div className="w-full flex flex-col sm:flex-row sm:justify-between  items-center mt-4">
         <img
           className="order-1 sm:order-2 w-[170px] sm:w-[230px] shadow-lg rounded-full"
