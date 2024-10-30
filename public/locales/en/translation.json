@@ -16,7 +16,7 @@
     "liveVersion": "Visit the live version",
     "fikra": {
       "title": "Fikra",
-      "description": "This full-stack project is a platform for developers to share their pet project ideas. It includes CRUD operations on posts. Currently, I am working on the authentication and authorization for the app. The frontend is built with React, TypeScript, and TailwindCSS, while the backend uses NestJS, TypeScript, PostgreSQL, and Prisma. For the CI/CD process, I am using GitHub Actions and Render (with the free tier for continuous delivery). The production database is hosted on Supabase."
+      "description": "This full-stack project is a platform for developers to share their pet project ideas. It includes CRUD operations on posts with authentication and authorization. The frontend is built with React, TypeScript, and TailwindCSS, while the backend uses NestJS, TypeScript, PostgreSQL, and Prisma. For the CI/CD process, I am using GitHub Actions and Render (with the free tier for continuous delivery). The production database is hosted on Supabase."
     },
     "sortingAlgorithm": {
       "title": "Sorting Algorithm Visualiser",
