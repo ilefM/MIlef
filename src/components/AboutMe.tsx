@@ -10,8 +10,9 @@ function AboutMe() {
   const { t, i18n } = useTranslation();
 
   function downloadCV() {
-    const pdfUrl =
-      i18n.language === 'en-US' ? 'milefCVenglish.pdf' : 'milefCV.pdf';
+    const pdfUrl = i18n.language.includes('fr')
+      ? 'milef_CV.pdf'
+      : 'milef_CV_english.pdf';
     console.log(i18n.language);
     console.log(pdfUrl);
     const link = document.createElement('a');
