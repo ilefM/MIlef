@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import profilepic from '../assets/profilepic.png';
+import profilepicreduced from '../assets/profilepicreduced.jpg';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
@@ -28,7 +28,7 @@ function AboutMe() {
       <div className="w-full flex flex-col sm:flex-row sm:justify-between  items-center mt-4">
         <img
           className="order-1 sm:order-2 w-[170px] sm:w-[230px] shadow-lg rounded-full"
-          src={profilepic}
+          src={profilepicreduced}
           alt="profile picture"
         />
         <div className="order-2 sm:order-1 flex flex-col items-center sm:items-start sm:justify-between">
@@ -56,7 +56,7 @@ function AboutMe() {
             </div>
             <div className="bg-foreground dark:bg-darkForeground rounded-md p-1">
               <Link
-                to="https://www.instagram.com/ilefffou/"
+                to="https://www.instagram.com/ilefffoo/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

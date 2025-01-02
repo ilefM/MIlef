@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { MdDarkMode, MdLightMode, MdOutlineLanguage } from 'react-icons/md';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { RiMenuFill } from 'react-icons/ri';
-import profilepic from '../assets/profilepic.png';
+import profilepicreduced from '../assets/profilepicreduced.jpg';
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -125,7 +125,7 @@ function Header() {
           <div className="flex items-center">
             <img
               className="w-[34px] rounded-full mr-2"
-              src={profilepic}
+              src={profilepicreduced}
               alt="profile picture"
             />
             <Link to={'/'}>
